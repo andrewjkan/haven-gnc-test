@@ -1,4 +1,9 @@
-.App {
+.row,
+.col {
+  border: 1px solid black;
+}
+
+/*.App {
   text-align: center;
 }
 
@@ -29,4 +34,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+}*/
