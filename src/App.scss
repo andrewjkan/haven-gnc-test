@@ -1,6 +1,21 @@
+// Imports
+@import '_variables.scss';
+
+// Global App Styles
+.App {
+  background-color: $black;
+  background-image: url('bg.jpg');
+  background-position: top center;
+  background-size: cover;
+}
+
 .row,
 .col {
   border: 1px solid black;
+}
+
+p {
+  color: $light-grey;
 }
 
 /*.App {
