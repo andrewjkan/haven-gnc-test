@@ -1,0 +1,12 @@
+// Fonts
+
+$font1: DINCond-Bold;
+
+@font-face {
+  font-family: 'DINCond-Bold';
+  src: url('./fonts/DINCond-Bold.woff') format('woff'),
+       url('./fonts/DINCond-Bold.ttf') format('truetype'),
+       url('./fonts/DINCond-Bold.svg#DINCond-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

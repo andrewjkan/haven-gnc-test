@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import logoGNC from './logo-gnc.svg';
 import logoSweeps from './logo-sweeps.png';
 import logoLiveNation from './logo-live-nation.png';
-// import background from './bg.jpg';
+import iconFb from './icon-fb.png';
+import iconTw from './icon-tw.png';
 import './App.scss';
 
 class App extends Component {
@@ -12,12 +13,14 @@ class App extends Component {
 
         <div className="container">
           <div className="header row">
-            <div className="logos col-md-10">
+            <div className="logos col-md-9">
               <img src={logoGNC} className="logo-gnc" alt="GNC - Live Well" />
               <img src={logoLiveNation} className="logo-live-nation" alt="Live Nation - Concerts" />
             </div>
-            <div className="share-icons col-md-2">
+            <div className="share-icons col-md-3">
               <h4>Share</h4>
+              <img src={iconFb} className="icon-fb" alt="Facebook" />
+              <img src={iconTw} className="icon-tw" alt="Twitter" />
             </div>
           </div> {/*END of header*/}
           <div className="main-content row">
