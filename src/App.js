@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logoGNC from './logo-gnc.svg';
-import logoSweeps from './logo-sweeps.svg';
+import logoSweeps from './logo-sweeps.png';
 import logoLiveNation from './logo-live-nation.png';
 // import background from './bg.jpg';
 import './App.scss';
