@@ -1,0 +1,28 @@
+.App {
+
+  .header {
+    border-bottom: 3px solid $red;
+
+    .logos {
+      background: $trueBlack;
+      padding: 16px;
+      padding-left: 30px;
+
+      .logo-gnc {
+        max-width: 111px;
+        margin-right: 25px;
+      }
+    }
+
+    .share-icons {
+      background: $red;
+      padding: 16px;
+
+      h4 {
+        color: $white;
+        text-transform: uppercase;
+      }
+    }
+    
+  }
+}

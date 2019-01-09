@@ -12,11 +12,13 @@ class App extends Component {
 
         <div className="container">
           <div className="header row">
-            <div className="col-md-10">
+            <div className="logos col-md-10">
               <img src={logoGNC} className="logo-gnc" alt="GNC - Live Well" />
               <img src={logoLiveNation} className="logo-live-nation" alt="Live Nation - Concerts" />
             </div>
-            <div className="col-md-2">Share Icons</div>
+            <div className="share-icons col-md-2">
+              <h4>Share</h4>
+            </div>
           </div> {/*END of header*/}
           <div className="main-content row">
             <div className="instructions col-lg-6">

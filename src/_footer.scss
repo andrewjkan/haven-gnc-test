@@ -1,0 +1,43 @@
+.App {
+
+  .footer {
+    color: $light-grey;
+    font-size: 11px;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+
+    a {
+      color: $red;
+      text-decoration: underline;
+      transition: .2s ease;
+
+      &:hover {
+        color: $white;
+        transition: .2s ease;
+      }
+    }
+
+    ul {
+      padding: 0;
+
+      li {
+        display: inline-block;
+        margin-right: 10px;
+
+        &:after {
+          content: "|";
+          margin-left: 10px;
+        }
+
+        &:last-child {
+          &:after {
+            content: "";
+          }
+        }
+
+        &:first {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
