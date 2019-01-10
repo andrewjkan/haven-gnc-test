@@ -1,16 +1,9 @@
 // Imports
-@import '_fonts.scss';
-@import '_variables.scss';
-@import '_header.scss';
-@import '_main-content.scss';
-@import '_footer.scss';
-
-// TODO TEMP
-// .row,
-// .col {
-//   background: rgba(255,255,255,0.5);
-//   border: 1px solid white;
-// }
+@import 'scss/_fonts.scss';
+@import 'scss/_variables.scss';
+@import 'scss/_header.scss';
+@import 'scss/_main-content.scss';
+@import 'scss/_footer.scss';
 
 // Global App Styles
 body {
@@ -18,7 +11,7 @@ body {
 }
 
 .App {
-  background-image: url('bg.jpg');
+  background-image: url('img/bg.jpg');
   background-position: top center;
   background-size: cover;
   max-width: 1600px;

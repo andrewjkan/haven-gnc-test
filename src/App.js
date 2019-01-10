@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import logoGNC from './logo-gnc.svg';
-import logoSweeps from './logo-sweeps.png';
-import logoLiveNation from './logo-live-nation.png';
-import iconFb from './icon-fb.png';
-import iconTw from './icon-tw.png';
-import iconTicket from './icon-ticket.png';
-import iconAirplane from './icon-airplane.png';
-import iconMoney from './icon-money.png';
-import captcha from './captcha.png';
+import logoGNC from './img/logo-gnc.svg';
+import logoSweeps from './img/logo-sweeps.png';
+import logoLiveNation from './img/logo-live-nation.png';
+import iconFb from './img/icon-fb.png';
+import iconTw from './img/icon-tw.png';
+import iconTicket from './img/icon-ticket.png';
+import iconAirplane from './img/icon-airplane.png';
+import iconMoney from './img/icon-money.png';
+import captcha from './img/captcha.png';
 import './App.scss';
 
 class App extends Component {

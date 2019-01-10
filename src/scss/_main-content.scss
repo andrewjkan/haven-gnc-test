@@ -27,7 +27,7 @@
     			position: absolute;
     			left: -399px;
     			top: 0;
-    			background-image: url('icon-ribbon-left.png');
+    			background-image: url('img/icon-ribbon-left.png');
     			background-size: contain;
     			background-repeat: no-repeat;
     			width: 455px;
@@ -194,16 +194,16 @@
 		    padding-right: 25px;
 		    padding-bottom: 3px;
 		    border: none;
-		    -webkit-box-shadow: 7px 6px 0px 0px rgba(0,0,0,0.2);
-			-moz-box-shadow: 7px 6px 0px 0px rgba(0,0,0,0.2);
-			box-shadow: 7px 6px 0px 0px rgba(0,0,0,0.2);
+		 //    -webkit-box-shadow: 7px 6px 0px 0px rgba(0,0,0,0.2);
+			// -moz-box-shadow: 7px 6px 0px 0px rgba(0,0,0,0.2);
+			// box-shadow: 7px 6px 0px 0px rgba(0,0,0,0.2);
 
     		&:after {
     			content: "";
     			position: absolute;
     			right: 0;
     			bottom: -10px;
-    			background-image: url('icon-ribbon-bottom.png');
+    			background-image: url('img/icon-ribbon-bottom.png');
     			background-size: contain;
     			background-repeat: no-repeat;
     			width: 10px;
