@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-
 import SelectSearch from 'react-select-search';
-
 import logoGNC from './img/logo-gnc.svg';
 import logoSweeps from './img/logo-sweeps.png';
 import logoLiveNation from './img/logo-live-nation.png';
