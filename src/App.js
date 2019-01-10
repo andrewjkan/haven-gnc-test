@@ -4,6 +4,7 @@ import logoSweeps from './logo-sweeps.png';
 import logoLiveNation from './logo-live-nation.png';
 import iconFb from './icon-fb.png';
 import iconTw from './icon-tw.png';
+import captcha from './captcha.png';
 import './App.scss';
 
 class App extends Component {
@@ -87,8 +88,10 @@ class App extends Component {
               </form> {/*END of form*/}
 
               <div className="row">
-                <div className="col-md-8">Captcha</div>
-                <div className="col-md-4">Enter Now Button</div>
+                <div className="col-md-8">
+                  <img src={captcha} className="captcha" alt="Captcha" />
+                </div>
+                <div className="col-md-4">Enter Now</div>
               </div>
 
             </div> {/*END of contact-form*/}

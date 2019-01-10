@@ -3,7 +3,22 @@
 .App {
 
   .main-content {
+  	margin-top: 40px;
     font-family: $font1;
     
+    .instructions {
+		.logo-sweeps {
+    		width: 100%;
+    		max-width: 517px;
+    	}
+    }
+
+    .contact-form {
+    	background-color: rgba(255,255,255,0.9);
+    	-webkit-box-shadow: 0px 0px 8px 3px rgba(186,186,186,0.6);
+		-moz-box-shadow: 0px 0px 8px 3px rgba(186,186,186,0.6);
+		box-shadow: 0px 0px 8px 3px rgba(186,186,186,0.6);
+    	padding: 25px;
+    }
   }
 }
