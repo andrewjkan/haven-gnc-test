@@ -4,6 +4,9 @@ import logoSweeps from './logo-sweeps.png';
 import logoLiveNation from './logo-live-nation.png';
 import iconFb from './icon-fb.png';
 import iconTw from './icon-tw.png';
+import iconTicket from './icon-ticket.png';
+import iconAirplane from './icon-airplane.png';
+import iconMoney from './icon-money.png';
 import captcha from './captcha.png';
 import './App.scss';
 
@@ -33,16 +36,16 @@ class App extends Component {
               </div>
               <div className="row">
                 <div className="col">
-                  <h2>Enter for a chance to win a Rock Flight® to a Live Nation® concert of your choice!+</h2>
+                  <h2>Enter for a chance to win a Rock Flight<sup>®</sup> to a Live Nation<sup>®</sup> concert of your choice!<sup>+</sup></h2>
                 </div>
               </div>
               <div className="row">
                 <div className="col">
                   <h3>1 Grand Prize winner will receive:</h3>
                   <ul>
-                    <li>2 tickets to a Live Nation concert in the U.S.+</li>
-                    <li>Airfare & hotel accommodations for 2</li>
-                    <li>$200 cash gift card</li>
+                    <li><img src={iconTicket} className="icon-ticket" alt="Tickets" /> 2 tickets to a Live Nation concert in the U.S.+</li>
+                    <li><img src={iconAirplane} className="icon-airplane" alt="Airfare" /> Airfare & hotel accommodations for 2</li>
+                    <li><img src={iconMoney} className="icon-money" alt="Gift Card" /> $200 cash gift card</li>
                   </ul>
                 </div>
               </div>
