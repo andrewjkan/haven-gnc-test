@@ -4,6 +4,7 @@
 @import 'scss/_header.scss';
 @import 'scss/_main-content.scss';
 @import 'scss/_footer.scss';
+@import 'scss/_react-select-search.scss';
 
 // Global App Styles
 body {
@@ -16,4 +17,8 @@ body {
   background-size: cover;
   max-width: 1600px;
   margin: auto;
+}
+
+ul {
+	padding-left: 0;
 }

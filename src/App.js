@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+
+import SelectSearch from 'react-select-search';
+
 import logoGNC from './img/logo-gnc.svg';
 import logoSweeps from './img/logo-sweeps.png';
 import logoLiveNation from './img/logo-live-nation.png';
@@ -9,6 +12,16 @@ import iconAirplane from './img/icon-airplane.png';
 import iconMoney from './img/icon-money.png';
 import captcha from './img/captcha.png';
 import './App.scss';
+
+/**
+ * The options array should contain objects.
+ * Required keys are "name" and "value" but you can have and use any number of key/value pairs.
+ */
+const options = [
+    {name: 'Los Angeles', value: 'la'},
+    {name: 'Santa Monica', value: 'sm'},
+    {name: 'Ontario', value: 'on'}
+];
 
 class App extends Component {
   render() {
@@ -66,7 +79,9 @@ class App extends Component {
                     <div className="col-md-6 form-spacing"><p className="form-label">Confirm Email</p> <input type="text"></input></div>
                   </div>
                   <div className="row">
-                    <div className="col-md-6 form-spacing"><p className="form-label">Select Your Metro Area</p> <input type="text"></input></div>
+                    <div className="col-md-6 form-spacing"><p className="form-label">Select Your Metro Area</p> 
+                      <SelectSearch options={options} value="" name="Select Your Metro Area" placeholder="Select" />
+                    </div>
                     <div className="col-md-6 form-spacing"><p className="form-label">Zip Code</p> <input type="text"></input></div>
                   </div>
                   <div className="row form-phone">
