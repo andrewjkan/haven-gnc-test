@@ -55,6 +55,7 @@
 		-moz-box-shadow: 0px 0px 8px 3px rgba(186,186,186,0.6);
 		box-shadow: 0px 0px 8px 3px rgba(186,186,186,0.6);
     	padding: 25px;
+    	position: relative;
 
     	p {
     		font-family: $font2;
@@ -119,6 +120,48 @@
 
     	.optional {
     		color: $red;
+    	}
+
+    	.captcha {
+    		width: 100%;
+    		max-width: 312px;
+    	}
+
+    	.btn-submit-container {
+    		text-align: right;
+    		padding-right: 0;
+    	}
+
+    	.btn-submit {
+    		background-color: $red;
+    		color: $white;
+    		font-size: 40px;
+    		font-family: $font3;
+    		text-transform: uppercase;
+    		text-shadow: 3px 3px 0px rgba(150, 17, 23, 1);
+    		position: absolute;
+		    bottom: 24px;
+		    right: -21px;
+    		padding: 10px;
+		    padding-left: 25px;
+		    padding-right: 25px;
+		    padding-bottom: 3px;
+		    border: none;
+		    -webkit-box-shadow: 7px 6px 0px 0px rgba(0,0,0,0.2);
+			-moz-box-shadow: 7px 6px 0px 0px rgba(0,0,0,0.2);
+			box-shadow: 7px 6px 0px 0px rgba(0,0,0,0.2);
+
+    		&:after {
+    			content: "";
+    			position: absolute;
+    			right: 0;
+    			bottom: -10px;
+    			background-image: url('icon-ribbon-bottom.png');
+    			background-size: contain;
+    			background-repeat: no-repeat;
+    			width: 10px;
+    			height: 10px;
+    		}
     	}
     }
   }

@@ -93,10 +93,12 @@ class App extends Component {
               </form> {/*END of form*/}
 
               <div className="row">
-                <div className="col-md-8">
+                <div className="col-md-7">
                   <img src={captcha} className="captcha" alt="Captcha" />
                 </div>
-                <div className="col-md-4">Enter Now</div>
+                <div className="btn-submit-container col-md-5">
+                  <button className="btn-submit">Enter Now</button>
+                </div>
               </div>
 
             </div> {/*END of contact-form*/}

@@ -2,12 +2,22 @@
 
 $font1: DINCond-Bold;
 $font2: 'Helvetica', 'Arial', sans-serif;
+$font3: MochaMattari;
 
 @font-face {
   font-family: 'DINCond-Bold';
   src: url('./fonts/DINCond-Bold.woff') format('woff'),
        url('./fonts/DINCond-Bold.ttf') format('truetype'),
        url('./fonts/DINCond-Bold.svg#DINCond-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MochaMattari';
+  src: url('./fonts/MochaMattari.woff') format('woff'),
+       url('./fonts/MochaMattari.ttf') format('truetype'),
+       url('./fonts/MochaMattari.svg#MochaMattari') format('svg');
   font-weight: normal;
   font-style: normal;
 }
