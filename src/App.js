@@ -51,38 +51,40 @@ class App extends Component {
               <form>
                 <fieldset>
                   <div className="row">
-                    <div className="col-md-6">First Name <input type="text"></input></div>
-                    <div className="col-md-6">Last Name <input type="text"></input></div>
+                    <div className="col-md-6 form-spacing"><p className="form-label">First Name</p> <input type="text"></input></div>
+                    <div className="col-md-6 form-spacing"><p className="form-label">Last Name</p> <input type="text"></input></div>
                   </div>
                   <div className="row">
-                    <div className="col-md-6">Email <input type="text"></input></div>
-                    <div className="col-md-6">Confirm Email <input type="text"></input></div>
+                    <div className="col-md-6 form-spacing"><p className="form-label">Email</p> <input type="text"></input></div>
+                    <div className="col-md-6 form-spacing"><p className="form-label">Confirm Email</p> <input type="text"></input></div>
                   </div>
                   <div className="row">
-                    <div className="col-md-6">Select Your Metro Area <input type="text"></input></div>
-                    <div className="col-md-6">Zip Code <input type="text"></input></div>
+                    <div className="col-md-6 form-spacing"><p className="form-label">Select Your Metro Area</p> <input type="text"></input></div>
+                    <div className="col-md-6 form-spacing"><p className="form-label">Zip Code</p> <input type="text"></input></div>
                   </div>
-                  <div className="row">
+                  <div className="row form-phone">
                     <div className="col-md-6">
-                      Phone Number (used only to contact winners)
+                      <p className="form-label">Phone Number <span className="emp-small">(used only to contact winners)</span></p>
                       <div className="row">
-                        <div className="col-md-3"><input type="tel" maxLength="3"></input></div>
-                        <div className="col-md-3"><input type="tel" maxLength="3"></input></div>
-                        <div className="col-md-3"><input type="tel" maxLength="3"></input></div>
+                        <div className="col">
+                          <input type="tel" maxLength="3"></input>
+                          <input type="tel" maxLength="3"></input>
+                          <input type="tel" maxLength="4"></input>
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div className="row">
-                    <div className="col-md-6"><input type="checkbox"></input> I agree to the <a href="#" target="_self">Official Rules</a></div>
+                    <div className="col"><input type="checkbox"></input> <p className="checkbox-copy">I agree to the <a href="#" target="_self">Official Rules</a></p></div>
                   </div>
                   <div className="row">
-                    <div className="col-md-6"><input type="checkbox"></input> Yes, I would like to receive special offers from GNC.<span>*</span></div>
+                    <div className="col"><input type="checkbox"></input> <p className="checkbox-copy">Yes, I would like to receive special offers from GNC.<span className="optional">*</span></p></div>
                   </div>
                   <div className="row">
-                    <div className="col-md-6"><input type="checkbox"></input> Yes, I would like concert information from Live Nation.<span>*</span></div>
+                    <div className="col"><input type="checkbox"></input> <p className="checkbox-copy">Yes, I would like concert information from Live Nation.<span className="optional">*</span></p></div>
                   </div>
                   <div className="row">
-                    <div className="col-md-6"><span>*</span>Optional</div>
+                    <div className="col"><p className="emp-small"><span className="optional">*</span>Optional</p></div>
                   </div>
                 </fieldset>
               </form> {/*END of form*/}

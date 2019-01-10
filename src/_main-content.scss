@@ -19,6 +19,70 @@
 		-moz-box-shadow: 0px 0px 8px 3px rgba(186,186,186,0.6);
 		box-shadow: 0px 0px 8px 3px rgba(186,186,186,0.6);
     	padding: 25px;
+
+    	p {
+    		font-family: $font2;
+    		font-size: 12px;
+    	}
+
+    	input[type="text"],
+    	input[type="tel"] {
+			border: 1px solid $true-black;
+			background-color: $form-bg;
+			padding: 10px;
+    	}
+
+    	input[type="text"] {
+    		width: 100%;
+    		display: block;
+    	}
+
+    	input[type="tel"] {
+    		width: 31%;
+    		display: inline-block;
+    		margin-right: 3%;
+
+    		&:last-child {
+    			margin-right: 0;
+    		}
+    	}
+
+    	.form-spacing {
+    		margin-bottom: 10px;
+    	}
+
+    	.form-label {
+    		font-family: $font1;
+    		font-size: 18px;
+    		text-transform: uppercase;
+    		margin-bottom: 0;
+
+    		.emp-small {
+    			font-family: $font2;
+    			text-transform: lowercase;
+    		}
+    	}
+
+    	.form-phone {
+    		margin-bottom: 10px;
+    	}
+
+    	.emp-small {
+    		font-size: 10px;
+    	}
+
+    	.checkbox-copy {
+    		display: inline;
+    	}
+
+    	a {
+    		color: $red;
+    		text-decoration: underline;
+    	}
+
+    	.optional {
+    		color: $red;
+    	}
     }
   }
 }
