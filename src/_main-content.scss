@@ -13,11 +13,57 @@
     		max-width: 517px;
     	}
 
-    	h2 {
-    		font-size: 38px;
-    		color: $white;
-    		text-shadow: 2px 2px 0px rgba(150, 17, 23, 1);
-    		margin-top: 20px;
+    	.ribbon {
+    		background-color: $red;
+    		position: relative;
+    		padding: 10px;
+    		padding-left: 0;
+    		margin-top: 30px;
+    		margin-bottom: 20px;
+    		width: 92%;
+
+    		&:before {
+    			content: "";
+    			position: absolute;
+    			left: -399px;
+    			top: 0;
+    			background-image: url('icon-ribbon-left.png');
+    			background-size: contain;
+    			background-repeat: no-repeat;
+    			width: 455px;
+    			height: 120px;
+    		}
+
+    		h2 {
+	    		font-size: 35px;
+	    		color: $white;
+	    		text-shadow: 2px 2px 0px rgba(150, 17, 23, 1);
+	    		line-height: 0.9em;
+	    		margin-bottom: 0;
+	    		margin-top: 0.5rem;
+	    	}
+
+	    	.ribbon-top-arrow {
+				width: 0;
+			    height: 0;
+			    border-style: solid;
+			    border-width: 50px 50px 0 0;
+			    border-color: #d91412 transparent transparent transparent;
+			    position: absolute;
+			    top: 0;
+			    right: -50px;
+	    	}
+
+	    	.ribbon-bottom-arrow {
+				width: 0;
+			    height: 0;
+			    border-style: solid;
+			    border-width: 50px 0 0 50px;
+			    border-color: transparent transparent transparent #d91412;
+			    position: absolute;
+			    bottom: 0;
+			    right: -50px;
+	    	}
     	}
 
     	sup {
@@ -46,6 +92,7 @@
     			margin-right: 5px;
     		}
     	}
+
     }
 	
 	// Right side of content

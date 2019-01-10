@@ -36,7 +36,11 @@ class App extends Component {
               </div>
               <div className="row">
                 <div className="col">
-                  <h2>Enter for a chance to win a Rock Flight<sup>®</sup> to a Live Nation<sup>®</sup> concert of your choice!<sup>+</sup></h2>
+                  <div className="ribbon">
+                    <h2>Enter for a chance to win a Rock Flight<sup>®</sup><br/> to a Live Nation<sup>®</sup> concert of your choice!<sup>+</sup></h2>
+                    <div className="ribbon-top-arrow"></div>
+                    <div className="ribbon-bottom-arrow"></div>
+                  </div>
                 </div>
               </div>
               <div className="row">
