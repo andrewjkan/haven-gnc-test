@@ -7,9 +7,20 @@
     
     // Left side of content
     .instructions {
-		.logo-sweeps {
+
+        .logo-sweeps-container {
+            @include bp-large {
+                text-align: center;
+            }
+        }
+		
+        .logo-sweeps {
     		width: 100%;
     		max-width: 517px;
+
+            @include bp-small {
+                width: 80%;
+            }
     	}
 
     	.ribbon {
@@ -21,6 +32,20 @@
     		margin-bottom: 20px;
     		width: 92%;
 
+            @include bp-xlarge {
+                width: 90%;
+            }
+
+            @include bp-large {
+                width: 98%;
+                text-align: center;
+            }
+
+            @include bp-small {
+                width: 100%;
+                padding-left: 10px;
+            }
+
     		&:before {
     			content: "";
     			position: absolute;
@@ -31,6 +56,15 @@
     			background-repeat: no-repeat;
     			width: 455px;
     			height: 120px;
+
+                @include bp-xlarge {
+                    left: -345px;
+                    height: 104px;
+                }
+
+                @include bp-small {
+                    background-image: none;
+                }
     		}
 
     		h2 {
@@ -40,6 +74,15 @@
 	    		line-height: 0.9em;
 	    		margin-bottom: 0;
 	    		margin-top: 0.5rem;
+
+                @include bp-xlarge {
+                    font-size: 28px;
+                }
+
+                @include bp-small {
+                    font-size: 22px;
+                    line-height: 1em;
+                }
 	    	}
 
 	    	.ribbon-top-arrow {
@@ -51,6 +94,10 @@
 			    position: absolute;
 			    top: 0;
 			    right: -50px;
+
+                @include bp-small {
+                    border: none;
+                }
 	    	}
 
 	    	.ribbon-bottom-arrow {
@@ -62,16 +109,34 @@
 			    position: absolute;
 			    bottom: 0;
 			    right: -50px;
+
+                @include bp-small {
+                    border: none;
+                }
 	    	}
     	}
 
     	sup {
     		font-size: 20px;
+
+            @include bp-small {
+                font-size: 12px;
+            }
     	}
 
+        .prize-container {
+            @include bp-large {
+                text-align: center;
+            }
+        }
+
     	h3 {
-    		font-size: 38px;
+    		font-size: 35px;
     		margin-bottom: 0;
+
+            @include bp-small {
+                font-size: 27px;
+            }
     	}
 
     	ul {
@@ -80,7 +145,15 @@
     		li {
     			display: block;
     			font-size: 28px;
-    			margin-bottom: 5px;
+    			margin-bottom: 2px;
+
+                @include bp-xlarge {
+                    font-size: 24px;
+                }
+
+                @include bp-small {
+                    font-size: 18px;
+                }
 
     			&:last-child {
     				margin-bottom: 0;
@@ -168,6 +241,13 @@
     		color: $red;
     	}
 
+        .captcha-container {
+            @include bp-small {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+
     	.captcha {
     		width: 100%;
     		max-width: 312px;
@@ -176,6 +256,11 @@
     	.btn-submit-container {
     		text-align: right;
     		padding-right: 0;
+
+            @include bp-small {
+                text-align: center;
+                padding-right: 15px;
+            }
     	}
 
     	.btn-submit {
@@ -193,9 +278,13 @@
 		    padding-right: 25px;
 		    padding-bottom: 3px;
 		    border: none;
-		 //    -webkit-box-shadow: 7px 6px 0px 0px rgba(0,0,0,0.2);
-			// -moz-box-shadow: 7px 6px 0px 0px rgba(0,0,0,0.2);
-			// box-shadow: 7px 6px 0px 0px rgba(0,0,0,0.2);
+
+            @include bp-small {
+                position: relative;
+                top: auto;
+                right: auto;
+                bottom: auto;
+            }
 
     		&:after {
     			content: "";
@@ -207,6 +296,10 @@
     			background-repeat: no-repeat;
     			width: 10px;
     			height: 10px;
+
+                @include bp-small {
+                    background-image: none;
+                }
     		}
     	}
     }

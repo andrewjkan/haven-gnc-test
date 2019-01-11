@@ -41,7 +41,7 @@ class App extends Component {
           <div className="main-content row">
             <div className="instructions col-lg-6">
               <div className="row">
-                <div className="col">
+                <div className="logo-sweeps-container col">
                   <img src={logoSweeps} className="logo-sweeps" alt="GNC - Ticket to Rock" />
                 </div>
               </div>
@@ -55,7 +55,7 @@ class App extends Component {
                 </div>
               </div>
               <div className="row">
-                <div className="col">
+                <div className="prize-container col">
                   <h3>1 Grand Prize winner will receive:</h3>
                   <ul>
                     <li><img src={iconTicket} className="icon-ticket" alt="Tickets" /> 2 tickets to a Live Nation concert in the U.S.+</li>
@@ -110,7 +110,7 @@ class App extends Component {
               </form> {/*END of form*/}
 
               <div className="row">
-                <div className="col-md-7">
+                <div className="captcha-container col-md-7">
                   <img src={captcha} className="captcha" alt="Captcha" />
                 </div>
                 <div className="btn-submit-container col-md-5">

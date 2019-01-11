@@ -12,17 +12,17 @@
 	}
 }
 @mixin bp-medium {
-	@media only screen and (max-width: $screen-bp-sm+1px) {
+	@media only screen and (max-width: $screen-bp-sm) {
 		@content;
 	}
 }
 @mixin bp-large {
-	@media only screen and (max-width: $screen-bp-md+1px) {
+	@media only screen and (max-width: $screen-bp-md) {
 		@content;
 	}
 }
 @mixin bp-xlarge {
-	@media only screen and (max-width: $screen-bp-lg+1px) {
+	@media only screen and (max-width: $screen-bp-lg) {
 		@content;
 	}
 }

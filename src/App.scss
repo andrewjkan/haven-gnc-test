@@ -11,20 +11,7 @@
 @include scrollbar(.5em, gray, darkgray);
 
 body {
-  background-color: #000000;
-
- //  @include bp-xlarge {
-	// background-color: white;
- //  }
- //  @include bp-large {
-	// background-color: yellow;
- //  }
- //  @include bp-medium {
-	// background-color: orange;
- //  }
- //  @include bp-small {
-	// background-color: green;
- //  }
+  background-color: $black;
 }
 
 .App {

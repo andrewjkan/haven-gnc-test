@@ -10,6 +10,10 @@
       padding: 16px;
       padding-left: 30px;
 
+      @include bp-medium {
+        text-align: center;
+      }
+
       .logo-gnc {
         max-width: 111px;
         margin-right: 25px;
