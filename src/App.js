@@ -95,13 +95,22 @@ class App extends Component {
                     </div>
                   </div>
                   <div className="row">
-                    <div className="col"><input type="checkbox"></input> <p className="checkbox-copy">I agree to the <a href="#" target="_self">Official Rules</a></p></div>
+                    <div className="col">
+                      <input type="checkbox" id="checkbox-1" name="checkbox-1" value="agree"></input>
+                      <label htmlFor="checkbox-1">I agree to the <a href="#" target="_self">Official Rules</a></label>
+                    </div>
                   </div>
                   <div className="row">
-                    <div className="col"><input type="checkbox"></input> <p className="checkbox-copy">Yes, I would like to receive special offers from GNC.<span className="optional">*</span></p></div>
+                    <div className="col">
+                      <input type="checkbox" id="checkbox-2" name="checkbox-2" value="offers"></input>
+                      <label htmlFor="checkbox-2">Yes, I would like to receive special offers from GNC.<span className="optional">*</span></label>
+                    </div>
                   </div>
                   <div className="row">
-                    <div className="col"><input type="checkbox"></input> <p className="checkbox-copy">Yes, I would like concert information from Live Nation.<span className="optional">*</span></p></div>
+                    <div className="col">
+                      <input type="checkbox" id="checkbox-3" name="checkbox-3" value="information"></input>
+                      <label htmlFor="checkbox-3">Yes, I would like concert information from Live Nation.<span className="optional">*</span></label>
+                    </div>
                   </div>
                   <div className="row">
                     <div className="col"><p className="emp-small"><span className="optional">*</span>Optional</p></div>

@@ -176,7 +176,8 @@
     	padding: 25px;
     	position: relative;
 
-    	p {
+    	p,
+        label {
     		font-family: $font2;
     		font-size: 12px;
     	}
@@ -202,7 +203,54 @@
     			margin-right: 0;
     		}
     	}
-		
+
+        input[type=checkbox] + label {
+          display: block;
+          // margin: 0.2em;
+          cursor: pointer;
+          // padding: 0.2em;
+        }
+
+        input[type=checkbox] {
+          display: none;
+        }
+
+        input[type=checkbox] + label:before {
+          content: "\2714";
+          border: 1px solid $black;
+          background-color: $form-bg;
+          display: inline-block;
+          width: 1.5em;
+          height: 1.5em;
+          padding-left: 0.2em;
+          padding-bottom: 0.3em;
+          margin-right: 0.5em;
+          vertical-align: bottom;
+          color: transparent;
+          transition: .2s;
+        }
+
+        input[type=checkbox] + label:active:before {
+          transform: scale(0);
+        }
+
+        input[type=checkbox]:checked + label:before {
+          background-color: $dark-grey;
+          border-color: $black;
+          color: $white;
+        }
+
+        input[type=checkbox]:disabled + label:before {
+          transform: scale(1);
+          border-color: #aaa;
+        }
+
+        input[type=checkbox]:checked:disabled + label:before {
+          transform: scale(1);
+          background-color: #bfb;
+          border-color: #bfb;
+        }
+        		
     	.form-spacing {
     		margin-bottom: 10px;
     	}
@@ -220,16 +268,11 @@
     	}
 
     	.form-phone {
-    		margin-bottom: 10px;
+    		margin-bottom: 20px;
     	}
 
     	.emp-small {
     		font-size: 10px;
-    	}
-
-    	.checkbox-copy {
-    		display: inline;
-    		margin-left: 5px;
     	}
 
     	a {
