@@ -1,0 +1,56 @@
+/**
+ * Mixins
+ */
+
+
+/**
+ * Media Queries
+ */
+@mixin bp-small {
+	@media only screen and (max-width: $screen-bp-min) {
+		@content;
+	}
+}
+@mixin bp-medium {
+	@media only screen and (max-width: $screen-bp-sm+1px) {
+		@content;
+	}
+}
+@mixin bp-large {
+	@media only screen and (max-width: $screen-bp-md+1px) {
+		@content;
+	}
+}
+@mixin bp-xlarge {
+	@media only screen and (max-width: $screen-bp-lg+1px) {
+		@content;
+	}
+}
+
+/**
+ * Custom Scrollbar Styling
+ * @param  {integer} $size       Enter in the increments for size of the scrollbar
+ *                               EX: ".5em"
+ * @param  {string}  $primary    Enter in the color desired for the primary color
+ * @param  {string}  $secondary  Enter in the color desired for the secondary color
+ */
+@mixin scrollbar($size, $primary, $secondary: lighten($primary, 25%)) {
+	::-webkit-scrollbar {
+		width:  $size;
+		height: $size;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: $primary;
+	}
+
+	::-webkit-scrollbar-track {
+		background: $secondary;
+	}
+
+	// For Internet Explorer
+	body {
+		scrollbar-face-color: $primary;
+		scrollbar-track-color: $secondary;
+	}
+}
