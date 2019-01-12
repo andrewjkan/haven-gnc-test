@@ -48,8 +48,8 @@
       function hideOverlay() {
         var element = document.getElementById("overlay");
         element.className = element.className.replace(/\bshow\b/g, "");
-        //console.log("hide overlay!");
       }
+
       function showOverlay() {
         var element, name, arr;
         element = document.getElementById("overlay");
@@ -58,18 +58,17 @@
         if (arr.indexOf(name) == -1) {
           element.className += " " + name;
         }
-        //console.log("show overlay!");
       }
+
       document.addEventListener('click', function(e) {
         if(/rules/.test(e.target.className)) {
           e.preventDefault();
           showOverlay();
-        }
-      }, false);
-      document.addEventListener('click', function(e) {
-        if(/btn-close/.test(e.target.className)) {
+        } else if(/btn-close/.test(e.target.className)) {
           e.preventDefault();
           hideOverlay();
+        } else {
+          return;
         }
       }, false);
     </script>
