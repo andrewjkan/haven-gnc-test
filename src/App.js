@@ -28,11 +28,11 @@ class App extends Component {
 
         <div className="container">
           <div className="header row">
-            <div className="logos col-md-9">
+            <div className="logos col-md-9 col-lg-10">
               <img src={logoGNC} className="logo-gnc" alt="GNC - Live Well" />
               <img src={logoLiveNation} className="logo-live-nation" alt="Live Nation - Concerts" />
             </div>
-            <div className="share-icons col-md-3">
+            <div className="share-icons col-md-3 col-lg-2">
               <h4>Share</h4>
               <img src={iconFb} className="icon-fb" alt="Facebook" />
               <img src={iconTw} className="icon-tw" alt="Twitter" />
@@ -149,6 +149,25 @@ class App extends Component {
             </div>
           </div> {/*END of footer*/}
         </div> {/*END of container*/}
+
+        <div id="overlay">
+          <p className="btn-close">
+            Close X
+          </p>
+          <div className="overlay-container">
+            <p className="title">Official Rules</p>
+            <p>
+              Ut malesuada efficitur massa, eget condimentum elit pharetra at. Phasellus laoreet tortor nec justo laoreet dapibus. Maecenas sit amet aliquam erat. Donec nec nibh sit amet nisi lobortis dictum. Vivamus non elit eleifend, tempus dolor vel, aliquam ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc dolor justo, malesuada vulputate blandit sed, eleifend vel ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            </p>
+            <p>
+              Maecenas tellus nibh, gravida at blandit ac, finibus sed nunc. Mauris eu nisl dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque sodales blandit erat. Ut consequat in felis sed sollicitudin. Nunc fermentum in sem sit amet pulvinar. Duis ultricies malesuada enim, a hendrerit sapien aliquam ac. Fusce vel vestibulum urna.
+            </p>
+            <p>
+              Praesent a risus tellus. Fusce mollis volutpat odio, et gravida massa consequat id. Pellentesque mollis lacinia lectus id viverra. Etiam eget leo quis lectus elementum malesuada. Maecenas vitae augue in mauris porta viverra. Etiam sit amet nisi posuere, malesuada dolor ut, mollis magna. Etiam ac placerat tellus. In sodales eleifend ante ut rhoncus. Suspendisse varius quis lacus at pulvinar. Aenean eget augue in felis auctor tincidunt. Sed vel orci justo. Mauris eleifend, lorem et venenatis gravida, odio augue ultrices dui, a sodales ex tortor eget nibh. Sed vulputate lectus nunc, quis varius dui volutpat id. Aliquam ac ex justo. Donec posuere imperdiet quam at feugiat. Proin pulvinar maximus dui, nec maximus enim.
+            </p>
+          </div>
+        </div>
+
       </div>
     );
   }
