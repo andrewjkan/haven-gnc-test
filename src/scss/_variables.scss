@@ -12,7 +12,7 @@ $white: #FFFFFF;
 $form-bg: #f1f1f3;
 
 // Breakpoint Screen Sizes
-$screen-bp-min: 576px; // content shouldn't get below this width
+$screen-bp-min: 576px; // lowest breakpoint
 $screen-bp-sm: 768px;
 $screen-bp-md: 992px;
-$screen-bp-lg: 1200px; // content shouldn't get above this width
+$screen-bp-lg: 1200px; // highest breakpoint

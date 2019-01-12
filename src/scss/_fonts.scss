@@ -1,9 +1,11 @@
 // Font styles
 
+// Variables
 $font1: DINCond-Bold;
 $font2: 'Helvetica','Arial',sans-serif;
 $font3: MochaMattari;
 
+// Font options
 @font-face {
     font-family: 'DINCond-Bold';
     src: url('./fonts/DINCond-Bold.woff') format('woff'),
