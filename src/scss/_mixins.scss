@@ -4,24 +4,24 @@
  * Media Queries
  */
 @mixin bp-small {
-	@media only screen and (max-width: $screen-bp-min) {
-		@content;
-	}
+    @media only screen and (max-width: $screen-bp-min) {
+        @content;
+    }
 }
 @mixin bp-medium {
-	@media only screen and (max-width: $screen-bp-sm) {
-		@content;
-	}
+    @media only screen and (max-width: $screen-bp-sm) {
+        @content;
+    }
 }
 @mixin bp-large {
-	@media only screen and (max-width: $screen-bp-md) {
-		@content;
-	}
+    @media only screen and (max-width: $screen-bp-md) {
+        @content;
+    }
 }
 @mixin bp-xlarge {
-	@media only screen and (max-width: $screen-bp-lg) {
-		@content;
-	}
+    @media only screen and (max-width: $screen-bp-lg) {
+        @content;
+    }
 }
 
 /**
@@ -32,22 +32,22 @@
  * @param  {string}  $secondary  Enter in the color desired for the secondary color
  */
 @mixin scrollbar($size, $primary, $secondary: lighten($primary, 25%)) {
-	::-webkit-scrollbar {
-		width:  $size;
-		height: $size;
-	}
+    ::-webkit-scrollbar {
+        width:  $size;
+        height: $size;
+    }
 
-	::-webkit-scrollbar-thumb {
-		background: $primary;
-	}
+    ::-webkit-scrollbar-thumb {
+        background: $primary;
+    }
 
-	::-webkit-scrollbar-track {
-		background: $secondary;
-	}
+    ::-webkit-scrollbar-track {
+        background: $secondary;
+    }
 
-	// For Internet Explorer
-	body {
-		scrollbar-face-color: $primary;
-		scrollbar-track-color: $secondary;
-	}
+    // For Internet Explorer
+    body {
+        scrollbar-face-color: $primary;
+        scrollbar-track-color: $secondary;
+    }
 }
