@@ -1,350 +1,351 @@
-// Main Content Styles
+// Main content styles
+
 .App {
 
-  .main-content {
-  	margin-top: 40px;
-    font-family: $font1;
-    
-    // Left side of content
-    .instructions {
+    .main-content {
+        margin-top: 40px;
+        font-family: $font1;
 
-        .logo-sweeps-container {
-            @include bp-large {
-                text-align: center;
-            }
-        }
-		
-        .logo-sweeps {
-    		width: 100%;
-    		max-width: 517px;
+        // Left side of content
+        .instructions {
 
-            @include bp-small {
-                width: 80%;
-            }
-    	}
-
-    	.ribbon {
-    		background-color: $red;
-    		position: relative;
-    		padding: 10px;
-    		padding-left: 0;
-    		margin-top: 30px;
-    		margin-bottom: 20px;
-    		width: 92%;
-
-            @include bp-xlarge {
-                width: 90%;
+            .logo-sweeps-container {
+                @include bp-large {
+                    text-align: center;
+                }
             }
 
-            @include bp-large {
-                width: 98%;
-                text-align: center;
-            }
-
-            @include bp-small {
+            .logo-sweeps {
                 width: 100%;
-                padding-left: 10px;
+                max-width: 517px;
+
+                @include bp-small {
+                    width: 80%;
+                }
             }
 
-    		&:before {
-    			content: "";
-    			position: absolute;
-    			left: -399px;
-    			top: 0;
-    			background-image: url('img/icon-ribbon-left.png');
-    			background-size: contain;
-    			background-repeat: no-repeat;
-    			width: 455px;
-    			height: 120px;
+            .ribbon {
+                background-color: $red;
+                position: relative;
+                padding: 10px;
+                padding-left: 0;
+                margin-top: 30px;
+                margin-bottom: 20px;
+                width: 92%;
 
                 @include bp-xlarge {
-                    left: -345px;
-                    height: 104px;
+                    width: 90%;
+                }
+
+                @include bp-large {
+                    width: 98%;
+                    text-align: center;
                 }
 
                 @include bp-small {
-                    background-image: none;
+                    width: 100%;
+                    padding-left: 10px;
                 }
-    		}
 
-    		h2 {
-	    		font-size: 35px;
-	    		color: $white;
-	    		text-shadow: 2px 2px 0px rgba(150, 17, 23, 1);
-	    		line-height: 0.9em;
-	    		margin-bottom: 0;
-	    		margin-top: 0.5rem;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: -399px;
+                    top: 0;
+                    background-image: url('img/icon-ribbon-left.png');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 455px;
+                    height: 120px;
 
-                @include bp-xlarge {
+                    @include bp-xlarge {
+                        left: -345px;
+                        height: 104px;
+                    }
+
+                    @include bp-small {
+                        background-image: none;
+                    }
+                }
+
+                h2 {
+                    font-size: 35px;
+                    color: $white;
+                    text-shadow: 2px 2px 0px rgba(150, 17, 23, 1);
+                    line-height: 0.9em;
+                    margin-bottom: 0;
+                    margin-top: 0.5rem;
+
+                    @include bp-xlarge {
+                        font-size: 28px;
+                    }
+
+                    @include bp-small {
+                        font-size: 22px;
+                        line-height: 1em;
+                    }
+                }
+
+                .ribbon-top-arrow {
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 50px 50px 0 0;
+                    border-color: #d91412 transparent transparent transparent;
+                    position: absolute;
+                    top: 0;
+                    right: -50px;
+
+                    @include bp-small {
+                        border: none;
+                    }
+                }
+
+                .ribbon-bottom-arrow {
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 50px 0 0 50px;
+                    border-color: transparent transparent transparent #d91412;
+                    position: absolute;
+                    bottom: 0;
+                    right: -50px;
+
+                    @include bp-small {
+                        border: none;
+                    }
+                }
+            }
+
+            sup {
+                font-size: 20px;
+
+                @include bp-small {
+                    font-size: 12px;
+                }
+            }
+
+            .prize-container {
+                @include bp-large {
+                    text-align: center;
+                }
+            }
+
+            h3 {
+                font-size: 35px;
+                margin-bottom: 0;
+
+                @include bp-small {
+                    font-size: 27px;
+                }
+            }
+
+            ul {
+                padding: 0;
+
+                li {
+                    display: block;
                     font-size: 28px;
+                    margin-bottom: 2px;
+
+                    @include bp-xlarge {
+                        font-size: 24px;
+                    }
+
+                    @include bp-small {
+                        font-size: 18px;
+                    }
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
                 }
 
-                @include bp-small {
-                    font-size: 22px;
-                    line-height: 1em;
+                img {
+                    margin-right: 5px;
                 }
-	    	}
+            }
 
-	    	.ribbon-top-arrow {
-				width: 0;
-			    height: 0;
-			    border-style: solid;
-			    border-width: 50px 50px 0 0;
-			    border-color: #d91412 transparent transparent transparent;
-			    position: absolute;
-			    top: 0;
-			    right: -50px;
+        }
 
-                @include bp-small {
-                    border: none;
-                }
-	    	}
+        // Right side of content
+        .contact-form {
+            background-color: rgba(255, 255, 255, 0.9);
+            -webkit-box-shadow: 0px 0px 8px 3px rgba(186, 186, 186, 0.6);
+            -moz-box-shadow: 0px 0px 8px 3px rgba(186, 186, 186, 0.6);
+            box-shadow: 0px 0px 8px 3px rgba(186, 186, 186, 0.6);
+            padding: 25px;
+            position: relative;
 
-	    	.ribbon-bottom-arrow {
-				width: 0;
-			    height: 0;
-			    border-style: solid;
-			    border-width: 50px 0 0 50px;
-			    border-color: transparent transparent transparent #d91412;
-			    position: absolute;
-			    bottom: 0;
-			    right: -50px;
-
-                @include bp-small {
-                    border: none;
-                }
-	    	}
-    	}
-
-    	sup {
-    		font-size: 20px;
-
-            @include bp-small {
+            p,
+            label {
+                font-family: $font2;
                 font-size: 12px;
             }
-    	}
 
-        .prize-container {
-            @include bp-large {
-                text-align: center;
+            input[type="text"],
+            input[type="tel"] {
+                border: 1px solid $true-black;
+                background-color: $form-bg;
+                padding: 10px;
             }
-        }
 
-    	h3 {
-    		font-size: 35px;
-    		margin-bottom: 0;
-
-            @include bp-small {
-                font-size: 27px;
+            input[type="text"] {
+                width: 100%;
+                display: block;
             }
-    	}
 
-    	ul {
-    		padding: 0;
+            input[type="tel"] {
+                width: 31%;
+                display: inline-block;
+                margin-right: 3%;
 
-    		li {
-    			display: block;
-    			font-size: 28px;
-    			margin-bottom: 2px;
-
-                @include bp-xlarge {
-                    font-size: 24px;
+                &:last-child {
+                    margin-right: 0;
                 }
+            }
 
-                @include bp-small {
-                    font-size: 18px;
+            input[type=checkbox]+label {
+                display: block;
+                // margin: 0.2em;
+                cursor: pointer;
+                // padding: 0.2em;
+            }
+
+            input[type=checkbox] {
+                display: none;
+            }
+
+            input[type=checkbox]+label:before {
+                content: "\2714";
+                border: 1px solid $black;
+                background-color: $form-bg;
+                display: inline-block;
+                width: 1.5em;
+                height: 1.5em;
+                padding-left: 0.2em;
+                padding-bottom: 0.3em;
+                margin-right: 0.5em;
+                vertical-align: bottom;
+                color: transparent;
+                transition: .2s;
+            }
+
+            input[type=checkbox]+label:active:before {
+                transform: scale(0);
+            }
+
+            input[type=checkbox]:checked+label:before {
+                background-color: $dark-grey;
+                border-color: $black;
+                color: $white;
+            }
+
+            input[type=checkbox]:disabled+label:before {
+                transform: scale(1);
+                border-color: #aaa;
+            }
+
+            input[type=checkbox]:checked:disabled+label:before {
+                transform: scale(1);
+                background-color: #bfb;
+                border-color: #bfb;
+            }
+
+            .form-spacing {
+                margin-bottom: 10px;
+            }
+
+            .form-label {
+                font-family: $font1;
+                font-size: 18px;
+                text-transform: uppercase;
+                margin-bottom: 0;
+
+                .emp-small {
+                    font-family: $font2;
+                    text-transform: lowercase;
                 }
+            }
 
-    			&:last-child {
-    				margin-bottom: 0;
-    			}
-    		}
-
-    		img {
-    			margin-right: 5px;
-    		}
-    	}
-
-    }
-	
-	// Right side of content
-    .contact-form {
-    	background-color: rgba(255,255,255,0.9);
-    	-webkit-box-shadow: 0px 0px 8px 3px rgba(186,186,186,0.6);
-		-moz-box-shadow: 0px 0px 8px 3px rgba(186,186,186,0.6);
-		box-shadow: 0px 0px 8px 3px rgba(186,186,186,0.6);
-    	padding: 25px;
-    	position: relative;
-
-    	p,
-        label {
-    		font-family: $font2;
-    		font-size: 12px;
-    	}
-
-    	input[type="text"],
-    	input[type="tel"] {
-			border: 1px solid $true-black;
-			background-color: $form-bg;
-			padding: 10px;
-    	}
-
-    	input[type="text"] {
-    		width: 100%;
-    		display: block;
-    	}
-
-    	input[type="tel"] {
-    		width: 31%;
-    		display: inline-block;
-    		margin-right: 3%;
-
-    		&:last-child {
-    			margin-right: 0;
-    		}
-    	}
-
-        input[type=checkbox] + label {
-          display: block;
-          // margin: 0.2em;
-          cursor: pointer;
-          // padding: 0.2em;
-        }
-
-        input[type=checkbox] {
-          display: none;
-        }
-
-        input[type=checkbox] + label:before {
-          content: "\2714";
-          border: 1px solid $black;
-          background-color: $form-bg;
-          display: inline-block;
-          width: 1.5em;
-          height: 1.5em;
-          padding-left: 0.2em;
-          padding-bottom: 0.3em;
-          margin-right: 0.5em;
-          vertical-align: bottom;
-          color: transparent;
-          transition: .2s;
-        }
-
-        input[type=checkbox] + label:active:before {
-          transform: scale(0);
-        }
-
-        input[type=checkbox]:checked + label:before {
-          background-color: $dark-grey;
-          border-color: $black;
-          color: $white;
-        }
-
-        input[type=checkbox]:disabled + label:before {
-          transform: scale(1);
-          border-color: #aaa;
-        }
-
-        input[type=checkbox]:checked:disabled + label:before {
-          transform: scale(1);
-          background-color: #bfb;
-          border-color: #bfb;
-        }
-        		
-    	.form-spacing {
-    		margin-bottom: 10px;
-    	}
-
-    	.form-label {
-    		font-family: $font1;
-    		font-size: 18px;
-    		text-transform: uppercase;
-    		margin-bottom: 0;
-
-    		.emp-small {
-    			font-family: $font2;
-    			text-transform: lowercase;
-    		}
-    	}
-
-    	.form-phone {
-    		margin-bottom: 20px;
-    	}
-
-    	.emp-small {
-    		font-size: 10px;
-    	}
-
-    	a {
-    		color: $red;
-    		text-decoration: underline;
-    	}
-
-    	.optional {
-    		color: $red;
-    	}
-
-        .captcha-container {
-            @include bp-small {
-                text-align: center;
+            .form-phone {
                 margin-bottom: 20px;
             }
-        }
 
-    	.captcha {
-    		width: 100%;
-    		max-width: 312px;
-    	}
-
-    	.btn-submit-container {
-    		text-align: right;
-    		padding-right: 0;
-
-            @include bp-small {
-                text-align: center;
-                padding-right: 15px;
-            }
-    	}
-
-    	.btn-submit {
-    		background-color: $red;
-    		color: $white;
-    		font-size: 40px;
-    		font-family: $font3;
-    		text-transform: uppercase;
-    		text-shadow: 3px 3px 0px rgba(150, 17, 23, 1);
-    		position: absolute;
-		    bottom: 24px;
-		    right: -21px;
-    		padding: 10px;
-		    padding-left: 25px;
-		    padding-right: 25px;
-		    padding-bottom: 3px;
-		    border: none;
-
-            @include bp-small {
-                position: relative;
-                top: auto;
-                right: auto;
-                bottom: auto;
+            .emp-small {
+                font-size: 10px;
             }
 
-    		&:after {
-    			content: "";
-    			position: absolute;
-    			right: 0;
-    			bottom: -10px;
-    			background-image: url('img/icon-ribbon-bottom.png');
-    			background-size: contain;
-    			background-repeat: no-repeat;
-    			width: 10px;
-    			height: 10px;
+            a {
+                color: $red;
+                text-decoration: underline;
+            }
+
+            .optional {
+                color: $red;
+            }
+
+            .captcha-container {
+                @include bp-small {
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .captcha {
+                width: 100%;
+                max-width: 312px;
+            }
+
+            .btn-submit-container {
+                text-align: right;
+                padding-right: 0;
 
                 @include bp-small {
-                    background-image: none;
+                    text-align: center;
+                    padding-right: 15px;
                 }
-    		}
-    	}
+            }
+
+            .btn-submit {
+                background-color: $red;
+                color: $white;
+                font-size: 40px;
+                font-family: $font3;
+                text-transform: uppercase;
+                text-shadow: 3px 3px 0px rgba(150, 17, 23, 1);
+                position: absolute;
+                bottom: 24px;
+                right: -21px;
+                padding: 10px;
+                padding-left: 25px;
+                padding-right: 25px;
+                padding-bottom: 3px;
+                border: none;
+
+                @include bp-small {
+                    position: relative;
+                    top: auto;
+                    right: auto;
+                    bottom: auto;
+                }
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    bottom: -10px;
+                    background-image: url('img/icon-ribbon-bottom.png');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    width: 10px;
+                    height: 10px;
+
+                    @include bp-small {
+                        background-image: none;
+                    }
+                }
+            }
+        }
     }
-  }
 }

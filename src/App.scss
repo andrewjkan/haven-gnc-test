@@ -8,21 +8,21 @@
 @import 'scss/_footer.scss';
 @import 'scss/_react-select-search.scss';
 
-// Global App Styles
+// Global styles
 @include scrollbar(.5em, gray, darkgray);
 
 body {
-  background-color: $true-black;
+    background-color: $true-black;
 }
 
 .App {
-  background-image: url('img/bg.jpg');
-  background-position: top center;
-  background-size: cover;
-  max-width: 1600px;
-  margin: auto;
+    background-image: url('img/bg.jpg');
+    background-position: top center;
+    background-size: cover;
+    max-width: 1600px;
+    margin: auto;
 }
 
 ul {
-	padding-left: 0;
+    padding-left: 0;
 }

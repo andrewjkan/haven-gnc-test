@@ -2,46 +2,46 @@
 
 .App {
 
-  .header {
-    border-bottom: 3px solid $red;
+    .header {
+        border-bottom: 3px solid $red;
 
-    .logos {
-      background: $true-black;
-      padding: 16px;
-      padding-left: 30px;
+        .logos {
+            background: $true-black;
+            padding: 16px;
+            padding-left: 30px;
 
-      @include bp-medium {
-        text-align: center;
-      }
+            @include bp-medium {
+                text-align: center;
+            }
 
-      .logo-gnc {
-        max-width: 111px;
-        margin-right: 25px;
-      }
-    }
-
-    .share-icons {
-      background: $red;
-      padding: 12px;
-      text-align: center;
-
-      h4 {
-        color: $white;
-        text-transform: uppercase;
-        font-size: 16px;
-        font-family: $font1;
-        display: inline-block;
-        margin-right: 10px;
-      }
-
-      img {
-        margin-right: 5px;
-
-        &:last-child {
-          margin-right: 0;
+            .logo-gnc {
+                max-width: 111px;
+                margin-right: 25px;
+            }
         }
-      }
+
+        .share-icons {
+            background: $red;
+            padding: 12px;
+            text-align: center;
+
+            h4 {
+                color: $white;
+                text-transform: uppercase;
+                font-size: 16px;
+                font-family: $font1;
+                display: inline-block;
+                margin-right: 10px;
+            }
+
+            img {
+                margin-right: 5px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
     }
-    
-  }
 }
